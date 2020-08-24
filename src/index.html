@@ -1,0 +1,370 @@
+<html>
+
+<head>
+  <title>Yu Tuang Yu</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <div class="opening">
+    <section id="nav-bar">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="http://pngimg.com/uploads/chef/chef_PNG71.png"><img id="logoKoki"
+            height="40px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#top" style="color:white;">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#diacak" style="color:white;">RANDOM</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-us" style="color:white;">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cari" style="color:white;">SEARCH</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer" style="color:white;">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+
+    <!--------------banner section-------------->
+
+    <section id="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div id="teksBanner">
+            <p class="promo-title" class="teksLogo">YU TUANG YU</p>
+            <p>We are here to help you! Here we provide thousands recipes that you can't resist!<br>
+              Aren't we all know home made foods are healthier? ;)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img id="ombak">
+    </section>
+  </div>
+  <section id="diacak">
+    <section id="random-resep-container">
+      <div class="container text-center">
+        <h1 class="title">Today's Random Recipe</h1>
+        <div class="row" id="random-resep-item-container">
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!----------About Us--------->
+
+  <section id="about-us">
+    <div class="container">
+      <h1 class="title text-center">What We Can Do?</h1>
+      <div class="row offset-1">
+        <div class="col-md-5 kelebihan">
+          <h3>Search Recipe Category</h3>
+          <img id="sPic">
+          <p>
+            See list of the search by <a style="text-shadow: 1px 1px 1px black; font-size:30px;" data-toggle="modal" data-target="#exampleModal">
+              HERE
+            </a>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">List Of Search By</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body" style="height: 350px; overflow-y: auto; padding:10px;">
+                    <!--INI MODAL BODY-->
+                    You Can Search Recipe By These Category(ex:Cuisine) Using Keywords Inside The List<br><br>
+                    <ul>
+                      <li><b>Recipe Name</b> : You can search with any recipe name you want to EX:
+                        <ul>
+                          <div class="modalDaftar">
+                            <li>Cake</li>
+                            <li>Rendang</li>
+                          </div>
+                        </ul>
+                      </li>
+                      <br>
+                      <li><b>Cuisine</b> : Search by the region of the food. One or more COMMA SEPARATED. Here is the
+                        list of the countries.
+                        <ul>
+                          <div class="modalDaftar" style="display:flex;">
+                            <div class="col-md-6">
+                              <li>African</li>
+                              <li>American</li>
+                              <li>British</li>
+                              <li>Cajun</li>
+                              <li>Caribbean</li>
+                              <li>Chinese</li>
+                              <li>Eastern</li>
+                              <li>European</li>
+                              <li>French</li>
+                              <li>German</li>
+                              <li>Greek</li>
+                              <li>Irish</li>
+                              <li>Italian</li>
+                            </div>
+                            <div class="col-md-6">
+                              <li>Japanese</li>
+                              <li>Jewish</li>
+                              <li>Korean</li>
+                              <li>Latin American</li>
+                              <li>Mediterranean</li>
+                              <li>Mexican</li>
+                              <li>Middle Eastern</li>
+                              <li>Nordic</li>
+                              <li>Southern</li>
+                              <li>Spanish</li>
+                              <li>Thai</li>
+                              <li>Vietnamese</li>
+                            </div>
+                          </div>
+                        </ul>
+                      </li>
+                      <br>
+                      <li><b>Intolerances</b> : Recipes that returned not contain ingredients that are intolerances. One
+                        or more COMMA SEPARATED. Below is the list of intolerances
+                        <ul>
+                          <div class="modalDaftar" style="display:flex;">
+                            <div class="col-md-6">
+                              <li>Dairy</li>
+                              <li>Egg</li>
+                              <li>Gluten</li>
+                              <li>Grain</li>
+                              <li>Peanut</li>
+                              <li>Seafood</li>
+                            </div>
+                            <div class="col-md-6">
+                              <li>Sesame</li>
+                              <li>Shellfish</li>
+                              <li>Soy</li>
+                              <li>Sulfite</li>
+                              <li>Tree Nut</li>
+                              <li>Wheat</li>
+                            </div>
+                          </div>
+                        </ul>
+                      </li>
+                      <br>
+                      <li><b>Exclude Ingredients</b> : A comma-separated list of ingredients or ingredient types that
+                        the recipes must not contain. EX:
+                        <ul>
+                          <div class="modalDaftar">
+                            <li>Pork</li>
+                            <li>Chicken, ginger</li>
+                          </div>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </p>
+        </div>
+        <div class="col-md-5 kelebihan">
+          <h3>Liked Recipes</h3>
+          <img id="lPic">
+          <p>
+            Here you can add and see your liked recipe.</p>
+            <br /><p>This web is still on beta so I am sorry is it's not as good as it is supposed to
+          </p>
+          <p class="user-details"><b>Regards, </b><br>Aulia Agustina</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!----------------Testimonials---------------->
+  <center>
+    <section id="cari">
+      <div class="container">
+        <h1 class="title text-center">Cari Resep</h1>
+        <search-bar></search-bar>
+        <daftar-resep></daftar-resep>
+        <pagi-nation></pagi-nation>
+      </div>
+    </section>
+  </center>
+
+  <!--------------Social Media section-------------->
+  <section id="social-media">
+    <div class="container text-center">
+      <p>FIND ME ON SOCIAL MEDIA</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/profile.php?id=100007301479046"><img id="facebook"></a>
+        <a href="https://www.instagram.com/auliaguss"><img id="insta"></a>
+        <a href="https://api.whatsapp.com/send?phone=6287779935290"><img id="wap"></a>
+        <a href="https://www.linkedin.com/in/aulia-agustina-0743421a1/"><img id="linke"></a>
+      </div>
+    </div>
+  </section>
+
+  <!------------footer section ------------>
+  <section id="footer">
+    <img id="ombak2" class="footer-img">
+    <div class="container">
+      <div class="row">
+        <div class="footer-box">
+          <img id="logoFoot"><h3 class="teksLogo">Yu Tuang Yu</h3>
+          <p>Hi! Thank you for your visit :)<br>
+          I just want to say that I am open to critics, so feel free to contact me ;)</p>
+        </div>
+      </div>
+      <hr>
+      <p class="copyright">Website Template Inspired by <a
+          href="https://www.youtube.com/c/EasyTutorialsVideo?sub_confirmation=1">Easy Tutorials</a> YouTube channel</p>
+    </div>
+  </section>
+
+  <div class="modal" id="modalDetailResep" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document" style="overflow-y: initial !important">
+      <div class="modal-content">
+        <div id="detailResep">
+          <style>
+            .heart i.fa-heart {
+              color: #f44336;
+              animation: putar 0.5s linear;
+            }
+
+            #like {
+              font-size: 3em;
+            }
+
+            @keyframes putar {
+              0% {
+                transform: rotate(0deg) scale(5);
+              }
+
+              20% {
+                transform: rotate(0deg) scale(1);
+              }
+
+              31% {
+                transform: rotate(360deg) scale(1);
+              }
+
+              100% {
+                transform: rotate(0deg) scale(1);
+              }
+            }
+
+            .modal-header,
+            .modal-footer {
+              background-color: var(--dark);
+              color: var(--netral);
+              height: 70%;
+            }
+
+            .modal-body {
+              background-color: var(--netral);
+              color: var(--dark);
+            }
+
+            .modal-footer button {
+              background-color: var(--netral);
+              color: #340d00;
+            }
+            .btn:hover{
+              background-color: var(--dark);
+              color: var(--netral);
+            }
+
+            .instructions {
+              color: var(--dark);
+            }
+
+            .spoonacular-ingredients-menu {
+              display: none;
+            }
+
+            .step {
+              color: var(--dark);
+            }
+          </style>
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalScrollableTitle">
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="height: 350px; overflow-y: auto;">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">
+              Close
+            </button>
+            <a id="like"><i class="fa fa-heart" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modalLikedResep" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document" style="overflow-y: initial !important">
+      <div class="modal-content">
+        <div id="detailResep">
+          <style>
+            .desc {
+              color: var(--dark);
+            }
+          </style>
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalScrollableTitle">
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="height: 350px; overflow-y: auto; color:#340d00;">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn" style="outline:none;" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!------------Smooth Scroll--------------->
+  <script src="smooth-scroll.js"></script>
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
+
+</body>
+
+</html>

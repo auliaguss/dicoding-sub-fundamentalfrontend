@@ -1,0 +1,359 @@
+@font-face {
+  font-family: 'Satan';
+  src: url('../fonts/Homeday.ttf') format('truetype');
+}
+* {
+  --tema1: #df0054;
+  --tema2: tomato;
+  --coklat: #621901;
+  --netral: #fff3e0;
+  --dark: #340d00;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--netral);
+}
+body {
+  font-family: sans-serif;
+}
+#nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+.navbar {
+  padding: 0 !important;
+}
+.diScroll {
+  background: url('../img/navCoklat4.png');
+  padding-bottom: 25px;
+  height: 110px;
+  width: 100%;
+  background-size: 400px;
+  z-index: 10;
+}
+.navbar-brand img {
+  height: 40px;
+  padding-left: 70px;
+}
+.navbar-nav {
+  position: absolute;
+  right: 0;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: var(--netral);
+}
+.navbar-nav li {
+  padding: 0 10px;
+}
+.navbar-nav li a {
+  font-weight: 600;
+  float: right;
+  text-align: left;
+}
+.fa-bars {
+  font-size: 30px !important;
+}
+.navbar-toggler {
+  outline: none !important;
+}
+
+/*-------------banner section---------------*/
+
+#banner {
+  padding-top: 5%;
+}
+
+.opening {
+  background-image: url('../img/kopiChoco.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-position: center;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.promo-title {
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 100px;
+}
+#banner a {
+  text-decoration: none;
+}
+#ombak {
+  margin-top: 60px;
+  width: 100%;
+}
+#teksBanner{
+  background: #340d0071;
+  margin: 0px;
+}
+
+#diacak {
+  background: var(--netral);
+  padding-bottom: 20px;
+}
+#random-resep-item-container {
+  display: flex;
+  padding: 30px 0px 0px 0px;
+  justify-content: center;
+}
+.wadahRandom {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 1000px;
+  transform-style: preserve-3d;
+}
+.diacak {
+  position: relative;
+  height: 300px;
+  width: 400px;
+  margin: 10px 0px 20px 0px;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  overflow: hidden;
+  border-left: 4px solid var(--tema2);
+  padding: 10px;
+  margin-right: 50px;
+  display: flex;
+}
+.diacak .fotoRandom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: top;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+  transition-delay: 0.2s;
+}
+.diacak:hover .fotoRandom {
+  transform: rotateX(-90deg);
+  opacity: 0;
+  transition-delay: 0s;
+}
+.fotoRandom .foto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.isiRandom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--dark);
+  color: var(--netral);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  transform-origin: bottom;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+  transform: rotateX(90deg);
+  opacity: 0;
+}
+.diacak:hover .isiRandom {
+  transform: rotateX(0deg);
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+.title::before {
+  content: '';
+  background: var(--tema2);
+  height: 5px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transform: translateY(63px);
+}
+.title::after {
+  content: '';
+  background: var(--tema1);
+  height: 10px;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  display: block;
+  transform: translateY(8px);
+}
+
+/*---------------about-us section--------------*/
+
+#about-us {
+  background-image: url('../img/chocobar.jpg');
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+}
+#about-us .container {
+  background: rgba(255, 255, 255, 0.26);
+}
+.about-title {
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 8%;
+  margin-bottom: 15%;
+  color: var(--dark);
+}
+.modalDaftar {
+  margin-left: 10px;
+}
+.modalDaftar .flek {
+  display: flex;
+}
+#about-us .modal-footer .btn:hover {
+  background-color: var(--coklat);
+  color: var(--netral);
+}
+/*--------------testimonials SECTION--------------*/
+
+#cari {
+  background-color: var(--netral);
+  padding-top: 20px;
+}
+#cari .container {
+  margin: 0px 30px 0px 30px;
+  padding: 0px;
+}
+daftar-resep {
+  margin: 0;
+  padding: 0;
+}
+/*----------social-media section-----------*/
+
+#social-media {
+  background: var(--netral);
+  padding: 100px 0;
+}
+#social-media p {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: var(--coklat);
+}
+.social-icons img {
+  width: 60px;
+  transition: 0.5s;
+}
+.social-icons a:hover img {
+  transform: translateY(-10px);
+}
+
+/*-----------------footer section---------------*/
+
+#footer {
+  background-image: linear-gradient(to right, var(--coklat), var(--dark));
+}
+.footer-img {
+  width: 100%;
+}
+.footer-box {
+  padding: 20px;
+}
+.footer-box img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+.footer-box .fa {
+  margin-right: 8px;
+  font-size: 25px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  padding-top: 7px;
+  border-radius: 2px;
+  background-image: linear-gradient(to right, #a517ba, #5f1782);
+}
+.footer-box .form-control {
+  box-shadow: none !important;
+  border: none;
+  border-radius: 0;
+  margin-top: 25px;
+  max-width: 250px;
+}
+.footer-box .btn-primary {
+  box-shadow: none !important;
+  border: none;
+  border-radius: 0;
+  margin-top: 30px;
+  background-image: linear-gradient(to right, #a517ba, #5f1782);
+}
+
+hr {
+  background-color: #fff;
+}
+.copyright {
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.copyright a {
+  color: #ffed00;
+}
+
+.title {
+  font-family: Satan;
+  color: var(--coklat);
+  font-weight: 1600;
+}
+.promo-title, .teksLogo{
+  font-family: Satan;
+  color: var(--netral);
+  font-weight: 1600;
+}
+a {
+  cursor: pointer;
+}
+::-webkit-scrollbar {
+  width: 12px;
+  transition: 5s;
+}
+::-webkit-scrollbar-thumb {
+  background-image: url('../img/stik.png');
+
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  box-shadow: 0 0 40px linear-gradient(transparent, #88e1f2);
+}
+
+@media screen and (max-width: 1300px) {
+  .diScroll ul li {
+    background: var(--dark);
+    width: 150px;
+  }
+  .popup {
+    width: 90%;
+  }
+}
+
+#modalLikedResep .btnReadMore {
+  display: none;
+}
+.modal-body ul li, .modal-body ul li b{
+  color:#340D00;
+}
